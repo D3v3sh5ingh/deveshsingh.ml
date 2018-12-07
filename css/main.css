@@ -1,4 +1,16 @@
-
+.navbar-brand {
+    position: relative;
+    background: url(../images/logo.png);
+    background-size: contain;
+	max-width: 100%;
+	height: auto !important;
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
 
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
