@@ -5,11 +5,8 @@
 	max-width: 100%;
 	height: auto !important;
   padding: 0px;
-}
-.navbar-brand>img {
-  height: 100%;
-  padding: 15px;
-  width: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 /*//////////////////////////////////////////////////////////////////
