@@ -1,0 +1,868 @@
+
+
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GLOBAL CSS STYLE
+* 02.HEADER CSS STYLE
+* 03.BANNER CSS STYLE
+* 04.ABOUT CSS STYLE
+* 05.SERVICES CSS STYLE
+* 06.PORTFOLIO CSS STYLE
+* 07.TEAM CSS STYLE
+* 08.CLIENTS CSS STYLE
+* 09.CONTACT CSS STYLE
+* 10.FOOTER CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+
+.btnx {
+  background-color: firebrick;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-size: 12px;
+  box-shadow: 0px 7px 17px 3px rgba(27, 27, 27, 0.41);
+  
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: 600;
+  transition: all 0.4s ease 0s;
+
+}
+
+.btnx:focus,
+.btnx:hover {
+  background-color: #f7f7f7;
+  border-color: #232531;
+  box-shadow: 0px 7px 17px 3px rgba(27, 27, 27, 0);
+}
+/* Preloader */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #333	;
+  z-index: 1000;
+}
+.secretpopout { display: none; }
+
+.pre-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+}
+
+.spinner {
+  margin: 0 auto;
+  width: 70px;
+  text-align: center;
+}
+
+.spinner>div {
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0)
+  }
+  40% {
+    -webkit-transform: scale(1.0)
+  }
+}
+
+@keyframes sk-bouncedelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GLOBAL STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Georgia', sans-serif;
+    background-attachment: fixed;
+    overflow-x: hidden !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {}
+
+a {
+    text-decoration: none;
+    -webkit-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+p {
+    line-height: 32px;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    border: 0 none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+section {
+    padding-top: 100px;
+    padding-bottom: 120px;
+    padding-left: 320px;
+}
+
+section h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    margin: 20px 0 40px;
+    text-transform: uppercase;
+} 
+
+section h2 {
+    font-size: 24px;
+    margin: 0 0 40px;
+    
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 40px;
+}
+
+.btn-primary {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background: #3498DB;
+    padding: 13px 30px;
+    border-radius: 3px;
+    font-size: 18px;
+    border: none;
+    color: #fff;
+}
+
+.btn-primary i {
+    padding-right: 20px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:active:focus,
+.btn-primary:active:hover {
+    background: #3498DB;
+    padding: 13px 30px;
+    border-radius: 3px;
+    border: none;
+    color: #232531;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 02.HEADER CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #232531;
+    padding: 0;
+    z-index: 1040;
+    min-width: 320px;
+    border-right: solid 1px #353747;
+    box-shadow: 0 0 30px #000;
+    transition: all 0.4s ease-in-out;
+}
+header .navbar-header{
+    float: none;
+}
+header .navbar-header .navbar-brand {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: auto;
+    padding: 40px 0;
+    border-bottom: solid 1px #353747;
+}
+header .navbar-header .navbar-brand img{
+    width: auto;
+    display: inline-block;
+}
+
+header .toggle-btn{
+    display: none;
+    background: #353747;
+    border: none;
+    position: absolute;
+    right: -90px;
+    top: 42px;
+    height: 40px;
+    width: 40px;
+}
+
+header .toggle-btn .icon-bar{
+    display: block;
+    width: 27px;
+    height: 2px;
+    background: #fff;
+    margin: 5px 0;
+}
+
+.side-nav > a {
+    font-size: 18px;
+    color: #fff;
+    padding-left: 30px;
+}
+
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-nav ul li {
+    display: block;
+}
+
+.side-nav ul li a {
+    font-family: 'Montserrat', sans-serif;
+    color: #595d75;
+    margin: 0;
+    padding: 32px 50px;
+    display: block;
+    font-size: 18px;
+    border-bottom: solid 1px #353747; 
+    border-left: solid 3px #232531;
+}
+
+.side-nav ul li a span {
+    padding-right: 20px;
+}
+
+.side-nav ul li a:active,
+.side-nav ul li a:focus,
+.side-nav ul li a:hover,
+.side-nav ul li a.active {
+    color: #3498DB;
+    background: #1e202a;
+    border-left: solid 3px #3498DB;
+    padding-left: 45px;
+}
+
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 03.BANNER CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+#banner {
+    background: url(../images/banner.jpg) center center no-repeat #ddd;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    min-height: 750px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+}
+
+#banner #demo-canvas {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#banner h1 {
+    color: #fff;
+    font-size: 48px;
+    margin: 100px 0 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+#banner p {
+    display: block;
+    font-size: 26px;
+    color: #fff;
+    margin: 0 0 60px;
+    line-height: 20px;
+}
+
+#banner p span {
+    color: #3498DB;
+}
+
+#video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+#video:before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+#video video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+#video + .container-fluid{
+    position: relative;
+    z-index: 2;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 04.ABOUT CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+#about {
+    background: #161821;
+}
+
+#about .row.about-para {
+    margin-bottom: 30px;
+}
+#about h1{
+    color: #797d90;
+}
+
+#about h2 {
+    color: #fff;
+}
+
+#about h2 span.fa {
+    padding-right: 20px;
+    font-size: 36px;
+    color: #333;
+}
+
+#about p {
+    color: #797d90;
+    margin: 0;
+}
+#about .skills p{
+    margin: 0;
+}
+
+#about .progress {
+    height: 8px;
+    margin-bottom: 30px;
+    background-color: #232531;
+    overflow: visible;
+}
+
+#about .progress-bar {
+    background-color: #3498DB;
+    border-radius: 4px;
+    position: relative;
+}
+#about .progress-bar span{
+        position: absolute;
+    right: -20px;
+    top: -45px;
+    background: #3498DB;
+    color: #232531;
+    display: block;
+    padding: 5px 8px;
+    font-size: 16px;
+}
+
+#about .progress-bar span:after{
+    position: absolute;
+    content:'';
+    display: block;
+    width: 0; 
+  height: 0; 
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #3498DB;
+  bottom: -8px;
+  left: 16px;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 05.SERVICES CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+#services {
+    position: relative;
+	 background: #fbfbfb;
+  border-bottom: 2px solid #f5f5f5;
+  border-top: 2px solid #f5f5f5;
+
+}
+#services h1{
+    color: #aaafc7;
+}
+
+#services h2{
+    color: #232531;
+}
+
+#services .services-details {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+
+#services h3 {
+    font-size: 20px;
+    color: #232531;
+    margin-bottom: 20px;
+}
+
+
+#services p {
+    font-size: 14px;
+    color: #595c6c;
+    margin: 0;
+}
+
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 06.PORTFOLIO CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+#portfolio {
+    background: #d3d5d0;
+}
+
+#portfolio h1 {
+    color: #fff;
+}
+
+#portfolio h2 {
+    color: #232531;
+}
+
+#portfolio .portfolio-gallary{
+    margin-top:30px;
+    margin-bottom: 60px;
+}
+
+#portfolio .grid-item {
+    width: 180px;
+    margin-left: 5px;
+    margin-bottom: 5px !important;
+    height: 180px;
+    overflow: hidden;
+}
+
+#portfolio .filter-navigation {
+    display: block;
+    text-align: center;
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+#portfolio .filter-navigation li {
+    display: block;
+    padding: 6px 0;
+    cursor: pointer;
+    color: #797d90;
+    text-align: left;
+    font-size: 18px;
+    border-left: solid 6px #e3e5f0;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+#portfolio .filter-navigation li.active {
+    color: #232531;
+    font-style: italic;
+    border-left: solid 6px #232531;
+}
+
+#portfolio .thumbnail-box {
+    position: relative !important;
+    width: 100%;
+    overflow: hidden;
+    height: 180px;
+}
+
+#portfolio .thumbnail-box img {
+    width: auto;
+    min-height: 100%;
+    left: 0;
+    top: 0;
+    transition: all .2s linear;
+}
+
+#portfolio .thumbnail-box:hover img {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: all .2s linear;
+}
+
+#portfolio .thumbnail-box a:before {
+    display: block;
+    content: "";
+    height: 40%;
+    width: 40%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    z-index: 2;
+    background: #3498DB;
+    pointer-event: none;
+    margin: auto;
+    transition: all 0.2s ease-out;
+}
+
+#portfolio .thumbnail-box:hover a:before {
+    height: 80%;
+    width: 80%;
+    opacity: 0.9;
+    transition: all 0.2s ease-out;
+}
+
+#portfolio .thumbnail-box a {
+    display: block;
+    overflow: hidden;
+}
+
+#portfolio .thumbnail-box span.fa {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: inline-block;
+    width: 24px;
+    padding: 0;
+    color: #fff;
+    z-index: 2;
+    font-size: 24px;
+    opacity: 0;
+    transition: all 0.4s ease-out;
+}
+
+#portfolio .thumbnail-box:hover span.fa {
+    top: 80px;
+    opacity: 1;
+    transition: all 0.4s ease-out;
+}
+
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 07.TEAM CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+#my-team {
+    position: relative;
+    background: #161821;
+	 padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+#my-team h1{
+    color: #797d90;
+}
+
+#my-team h2{
+    color: #fff;
+}
+
+#my-team .team-container{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+#my-team .team-box {
+    overflow: hidden;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+#my-team .team-box img{
+    width: 100%;
+}
+
+#my-team .team-box:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+#my-team .team-box h4 {
+    font-size: 20px;
+    color: #fff;
+    margin: 30px 0 10px;
+}
+
+#my-team .team-box span {
+    display: block;
+    font-size: 16px;
+    color: #797d90;
+    margin: 0 0 40px
+}
+#my-team .team-box p {
+    font-size: 16px;
+    color: #797d90;
+    margin: 0;
+}
+#my-team .team-box a.fa{
+    font-size: 24px;
+    color: #797d90;
+    padding: 30px 0 0 10px;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 08.CLIENTS CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+#clients {
+    position: relative;
+}
+
+#clients h1 {
+    color: #aaafc7;
+}
+
+#clients .carousel-inner {
+    margin: 30px 0;
+}
+
+#clients .testimonial{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#clients .item p {
+    color: #595c6c;
+    font-size: 14px;
+    display: block;
+    line-height: 24px;
+    margin: 0;
+}
+
+#clients .item h3 {
+    font-size: 20px;
+    color: #232531;
+    font-style: italic;
+    margin: 0 0 20px;
+}
+
+
+#clients .item img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+#clients .carousel-control {
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+    background: #c9ccdd;
+    border-radius: 3px;
+    margin: auto;
+    color: #232531;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 09.CONTACT CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+#contact {
+    background: #fbfbfb;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    position: relative;
+}
+
+#contact h1{
+    color: #fff;
+}
+
+#contact h2{
+    color: #232531;
+}
+
+#contact .contact-form {
+   margin-top: 30px;
+}
+
+.form-control {
+    background: transparent;
+    border: solid 1px #797d90;
+    border-radius: 3px;
+    resize: none;
+    margin-bottom: 40px;
+    height: 50px;
+}
+
+.form-control:focus {
+    border-color: #3498DB;
+    box-shadow: none;
+}
+
+textarea.form-control {
+    margin-bottom: 60px;
+}
+
+#contact p{
+    color: #797d90;
+    margin: 0 0 40px;
+}
+#contact p span{
+    color: #232531;
+    font-size: 18px;
+    display: block;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 10.FOOTER CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+footer {
+    background: #090909;
+    border-top: dashed 1px #333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 320px;
+}
+
+footer .copyright {
+    font-size: 18px;
+    margin: 20px 0;
+    color: #797d90;
+}
+
+footer .social-media a{
+    font-size: 24px;
+    color: #797d90;
+    margin: 20px 0;
+    padding-left: 10px;
+}
+footer .social-media a:hover{
+    color: #fff;
+}

@@ -1,0 +1,103 @@
+
+
+/* Medium Layout: 1280px. */
+
+@media only screen and (max-width: 1280px) {
+
+    #banner{
+        background-size: cover;
+        background-position: center center;
+    }
+    section {
+        padding-left: 20px;
+    }
+    footer{
+        padding-left: 0;
+    }
+    header.expand {
+        left: 0;
+    }
+    header{
+        left: -340px;
+    }
+    header .toggle-btn{
+        display: block;
+    }
+    #video video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {}
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+
+    #about p {
+        margin-bottom: 30px;
+    }
+
+    #banner{
+        min-height: 100%;
+        max-height: auto;
+    }
+
+    #banner h1 {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+    #banner p {
+        font-size: 18px;
+    }
+
+    header .navbar-header .navbar-brand {
+        padding: 20px 0;
+    }
+
+    .side-nav ul li a {
+        padding: 22px 40px;
+    }
+
+    header.expand .toggle-btn{
+        right: auto;
+        left: 40px; 
+        top: 22px;
+    }
+
+    header .toggle-btn {
+        top: 22px;
+    }
+
+    section {
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+    section h1 {
+        font-size: 42px;
+    }
+    #contact p {
+        margin:60px 0 0;
+    }
+    footer .copyright {
+        text-align: center;
+    }
+    footer .social-media{
+        text-align: center;
+    }
+    #clients .item img {
+        width: auto;
+        margin-bottom: 60px;
+    }
+}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+}
