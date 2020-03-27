@@ -221,7 +221,7 @@ $( document ).ready(function() {
 /*------------------------------ Count Up ----------------------*/
 
 setInterval(function() {
-    var timespan = countdown(new Date("05/24/2012"), new Date());
+    var timespan = countdown(new Date("04/29/2020"), new Date());
     var div = document.getElementById('time');
     div.innerHTML = "<div><span>Years</span>" + timespan.years + "</div>" + "<div><span>Months</span>" + timespan.months + "</div>" + "<div><span>Days</span>" + timespan.days + "</div>" + "<div><span>Hours</span>" + timespan.hours + "</div>" + "<div><span>Minutes</span>" + timespan.minutes + "</div>" + "<div><span>Seconds</span>" + timespan.seconds + "</div>"
 }, 1000);
