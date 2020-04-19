@@ -38,14 +38,14 @@ viewBookLink.on('click', function(){
 });
 
 //Detect click outside book
-$('html').on( 'click', function(event) {
-  if ($(event.target).parents('.bk-book').length == 0){
-    bookDefault();
-    if (!colorContainers.hasClass('hidden'))
-      changeColorLink.click();
-  }
-  return false;
-});
+// $('html').on( 'click', function(event) {
+//   if ($(event.target).parents('.bk-book').length == 0){
+//     bookDefault();
+//     if (!colorContainers.hasClass('hidden'))
+//       changeColorLink.click();
+//   }
+//   return false;
+// });
 
 //Change color
 var colorLabel = (function(){
