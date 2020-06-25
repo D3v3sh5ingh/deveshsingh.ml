@@ -1,38 +1,7 @@
-/* ----------------------------------
-Ocean
-Version: 1.0
-Author: BootEx
-
--------------------------------------
-
-Table of contents
-
-  01. Main Styles
-  02. Common Style
-      -Preloader
-      -Left Bar
-  
-  03. Intro 
-  04. About 
-  05. Service
-  06. Resume
-  07. Portfolio
-  08. Review
-  09. Blog
-  10. Contact
-  11. Footer
-  12. Page
-      -Blog Page
-      -single Blog
-  13. Responsive
-
-*/
-
-
 /* ===================================
   01. Main Styles
 ====================================== */
-@import url('../../../../../../../fonts.googleapis.com/css5656.css?family=Montserrat:300,400,600,700|Poppins:400,600,700');
+/* @import url("https://www.fonts.googleapis.com/css?family=Montserrat:300,400,600,700|Poppins:400,600,700"); */
 
 body,
 html {
@@ -85,7 +54,6 @@ img {
   padding-top: 80px;
   padding-bottom: 80px;
 }
-
 
 /* ===================================
   02. Common Styles
@@ -215,7 +183,7 @@ img {
   text-align: center;
 }
 
-.spinner>div {
+.spinner > div {
   width: 18px;
   height: 18px;
   background-color: #333;
@@ -239,10 +207,10 @@ img {
   0%,
   80%,
   100% {
-    -webkit-transform: scale(0)
+    -webkit-transform: scale(0);
   }
   40% {
-    -webkit-transform: scale(1.0)
+    -webkit-transform: scale(1);
   }
 }
 
@@ -254,8 +222,8 @@ img {
     transform: scale(0);
   }
   40% {
-    -webkit-transform: scale(1.0);
-    transform: scale(1.0);
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
 }
 
@@ -414,8 +382,6 @@ img {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-
-
 /* ===================================
   03. Intro Section
 ====================================== */
@@ -495,8 +461,6 @@ img {
   font-size: 18px;
 }
 
-
-
 /* ===================================
   04. About Section
 ====================================== */
@@ -548,8 +512,6 @@ img {
   border-radius: 25px;
 }
 
-
-
 /* ===================================
   05. Services Section
 ====================================== */
@@ -599,7 +561,6 @@ img {
   font-size: 18px;
   margin-bottom: 15px;
 }
-
 
 /* ===================================
   06. Resumes Section
@@ -652,8 +613,6 @@ img {
   margin-bottom: 0;
 }
 
-
-
 /* ===================================
   07. Portfoilo Section
 ====================================== */
@@ -673,7 +632,7 @@ img {
 }
 
 .portfolio-filter li {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 13px;
   display: inline-block;
   margin-right: 10px;
@@ -808,8 +767,6 @@ img {
   box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-
-
 /* ===================================
   08. Testimonel Section
 ====================================== */
@@ -847,7 +804,7 @@ img {
 .testimonel-item p:after {
   position: absolute;
   content: "\f10d";
-  font-family: 'FontAwesome';
+  font-family: "FontAwesome";
   top: 18px;
   left: 0;
 }
@@ -903,8 +860,6 @@ img {
   color: #fff;
 }
 
-
-
 /* ===================================
   09. Blog Section
 ====================================== */
@@ -924,7 +879,7 @@ img {
   position: relative;
 }
 
-.blog-item-thumb img{
+.blog-item-thumb img {
   min-width: 100%;
 }
 
@@ -971,7 +926,6 @@ img {
   font-weight: 400;
   letter-spacing: 0.04em;
 }
-
 
 /* ===================================
   10. Contact Section
@@ -1065,7 +1019,6 @@ img {
   color: #fff;
 }
 
-
 /* ===================================
   11. Contact Section
 ====================================== */
@@ -1077,7 +1030,6 @@ img {
 .footer-section p {
   margin-bottom: 0;
 }
-
 
 /* ===================================
   12. Pages
@@ -1403,8 +1355,6 @@ img {
   outline: none;
 }
 
-
-
 /* ===================================
   13. Responsive Section
 ====================================== */
@@ -1420,11 +1370,10 @@ img {
   .widget {
     padding-left: 0px !important;
   }
-  .page-title{
+  .page-title {
     font-size: 40px;
   }
 }
-
 
 /* Large Mobile :480px. */
 @media only screen and (max-width: 767px) {
@@ -1450,11 +1399,10 @@ img {
   .widget {
     padding-left: 0px !important;
   }
-  .page-title{
+  .page-title {
     font-size: 25px;
   }
 }
-
 
 /* small mobile :320px. */
 @media only screen and (max-width: 479px) {
@@ -1468,9 +1416,3 @@ img {
     font-size: 40px;
   }
 }
-
-
-
-
-
-
