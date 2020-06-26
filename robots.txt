@@ -2,3 +2,4 @@ User-agent: *
 Disallow: /img/
 Disallow: /images/
 Disallow: /devweb/img/
+sitemap: http://www.deveshsingh.ml/sitemap
