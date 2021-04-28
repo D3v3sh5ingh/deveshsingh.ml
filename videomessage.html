@@ -19,8 +19,12 @@
   <meta name="language" content="English">
 	<meta name="revisit-after" content="1 days">
 	<meta name="author" content="Devesh Singh">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
+  <link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  crossorigin="anonymous"
+/>
 	
 	<link rel="icon" type="image/x-icon" class="js-site-favicon" href="./images/favicon.ico">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js">
@@ -727,6 +731,7 @@
   }
 
   function openBox() {
+    
     document.querySelector(".gift").removeEventListener("click", openBox);
     TweenMax.set(".hat", {
       transformOrigin: "left bottom"
@@ -751,6 +756,14 @@
         document.querySelector(".gift").classList.add("hidden");
       }
     });
+    setTimeout(function(){ var z = document.getElementById("final");
+  if (z.style.display === "none") {
+    z.style.display = "block";
+  } else {
+    z.style.display = "none";
+  } }, 2000);
+
+    
   }
 
   function startAnimations() {
@@ -1206,8 +1219,17 @@ window.onload = function() {
       text-align: center;
       margin-top: 11%;
     ">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_cg5QI7NaC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <h1 class="display-3">HAPPY 22nd BIRTHDAY TANNU</h1>
+<h2 class="display-3">Happy 22nd Birthday Mahima</h2>
+<div style="    display: none;"class="alert alert-primary" id="final" role="alert">
+  <strong>Click me to get your </strong> <a href="/videomessage.html" class="alert-link">FINAL PRESENT!</a>
+</div>
+<script>
+  function myFunction() {
+    console.log("Clicked")
+  
+  }
+</script>
+
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.min.js"></script>
     </div>
