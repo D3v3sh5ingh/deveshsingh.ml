@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Hi,I am Devesh,a Senior year engineering student from Delhi technological University. Mathematics and computing Student, A coder by heart and developer by skill.Someone who loves to code, imaging and create crazy stuff."
+    />
+    <meta
+      name="keywords"
+      content="Student,btech,Engineer,wannabe,lover,polite,humour,hero,agency, clean, corporate, creative, multipurpose, photography, personal portfolio, architect, elegant, minimal, one page, parallax, showcase, blog, branding"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="author" content="Devesh Singh" />
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      class="js-site-favicon"
+      href="./images/favicon.ico"
+    />
+
+    <title>Fetching Happiness.</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-130645554-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-130645554-1");
+    </script>
+   
+        <style>
+       
+          @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+
+          /* BASIC CODE  
+   * ------------------ */
+          *,
+          div,
+          p,
+          img {
+            pointer-events: none;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+          }
+
+          /* BODY CODE  
+   * ------------------ */
+          body {
+            font-family: sans-serif;
+            margin: 0;
+            background: #ddd;
+          }
+
+          /* MASONRY GRID 
+   * ------------------ */
+          .css-masonry {
+            -webkit-column-count: 4;
+            -moz-column-count: 4;
+            column-count: 4;
+
+            -webkit-column-gap: 1em;
+            -moz-column-gap: 1em;
+            column-gap: 1em;
+
+            -moz-column-gap: 1.5em;
+            -webkit-column-gap: 1.5em;
+            column-gap: 1.5em;
+
+            margin: 1.5em;
+            padding: 0;
+            font-size: 0.85em;
+          }
+
+          /* ITEM 
+   * ------------------ */
+          .item {
+            display: inline-block;
+            width: 100%;
+
+            font-family: "Alata", sans-serif;
+            font-size: 1.8em;
+
+            background: #fff;
+            margin: 0 0 1em;
+            width: 100%;
+
+            -webkit-transition: 1s ease all;
+
+            border: 2px solid black;
+            border-radius: 6px;
+            overflow: hidden; /* to affect the inner elements with the radius */
+          }
+
+          .item img {
+            max-width: 100%;
+            font-size: 0;
+            height: auto; /* to be sure to don't have a spacing after the img due to the inline block function */
+          }
+
+          .item-number {
+            border: 2px solid black;
+            border-radius: 50%;
+            background: #fff;
+
+            font-size: 0.8em;
+            display: flex; /* flex is for center verticaly and horizontaly the number */
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            padding: 0 2px 2px 0; /* I display right and bottom padding because of the font who is not center par default : delete if you change the font */
+
+            position: absolute;
+            margin: 5px;
+          }
+
+          .item .title {
+            border: 0px solid blue;
+            padding: 10px 10px 14px;
+          }
+
+          .french {
+            color: grey;
+            font-size: 0.8em;
+          }
+
+          @media only screen and (max-width: 420px) {
+            .css-masonry {
+              -moz-column-count: 1;
+              -webkit-column-count: 1;
+              column-count: 1;
+            }
+          }
+
+          @media only screen and (min-width: 421px) and (max-width: 768px) {
+            .css-masonry {
+              -moz-column-count: 2;
+              -webkit-column-count: 2;
+              column-count: 2;
+            }
+          }
+          @media only screen and (min-width: 769px) and (max-width: 1000px) {
+            .css-masonry {
+              -moz-column-count: 3;
+              -webkit-column-count: 3;
+              column-count: 3;
+            }
+          }
+          @media only screen and (min-width: 1001px) {
+            .css-masonry {
+              -moz-column-count: 4;
+              -webkit-column-count: 4;
+              column-count: 4;
+            }
+          }
+        </style>
+
+      </head>
+
+      <body
+      >
+        <!-- container all the item -->
+        <div class="css-masonry">
+          <!-- item -->
+          <div class="item">
+            <!-- number of the item -->
+            <div class="item-number">1</div>
+            <!-- image -->
+            <img
+              src="img/t/15.jpg"
+            />
+            <!-- title if title -->
+            <div class="title">
+              From the burgers .
+              <p class="french">To the shakes</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="title">
+              Happy Birthday Tannu              <p class="french">
+                
+                <br />
+                Re-live all the moments!
+                
+              </p>
+            </div>
+          </div>
+          <!-- item -->
+          <div class="item">
+            <!-- number of the item -->
+            <div class="item-number">2</div>
+            <!-- image -->
+            <img
+            src="img/t/2.jpg"
+          />
+            <div class="title">To the pandemic days</div>
+          </div>
+
+          <!-- item -->
+          <div class="item">
+            <!-- number of the item -->
+            <div class="item-number">3</div>
+            <!-- image -->
+            <img
+            src="img/t/12.jpg"
+          />
+            <div class="title">
+                To sharing pizza slices
+            </div>
+          </div>
+          
+          <!-- item -->
+          <div class="item">
+            <!-- number of the item -->
+            <div class="item-number">4</div>
+            <!-- image -->
+            <img
+            src="img/t/22.jpg"
+          />
+            <div class="title">To going to jail</div>
+          </div>
+
+          <!-- item -->
+          <div class="item">
+            <!-- number of the item -->
+            <div class="item-number">5</div>
+            <!-- image -->
+            <img
+            src="img/t/3.jpg"
+          />
+            <div class="title">To the rooftop lunch</div>
+          </div>
+
+          <!-- item -->
+          <div class="item">
+            <!-- number of the item -->
+            <div class="item-number">6</div>
+            <!-- image -->
+            <img
+            src="img/t/13.jpg"
+          />
+            <div class="title">To all the pretty faces</div>
+          </div>
+
+          <!-- item -->
+          <div class="item">
+            <!-- number of the item -->
+            <div class="item-number">7</div>
+            <!-- image -->
+            <img
+            src="img/t/23.jpg"
+          />
+            <div class="title">
+              To your blury camera<br />
+              
+            </div>
+          </div>
+
+          <!-- item -->
+          <div class="item">
+            <!-- number of the item -->
+            <div class="item-number">8</div>
+            <!-- image -->
+            <img
+            src="img/t/4.jpg"
+          />
+            <div class="title">To all the funny filters</div>
+          </div>
+
+          <!-- item -->
+          <div class="item">
+            <!-- number of the item -->
+            <div class="item-number">9</div>
+            <!-- image -->
+            <img
+            src="img/t/14.jpg"
+          />
+            <div class="title">To the delhi summers</div>
+          </div>
+
+          <!-- item -->
+          <div class="item">
+            <!-- number of the item -->
+            <div class="item-number">10</div>
+            <!-- image -->
+            <img
+            src="img/t/24.jpg"
+          />
+            <div class="title">To the birthday parties</div>
+          </div>
+
+          <!-- item -->
+          <div class="item">
+            <!-- number of the item -->
+            <div class="item-number">11</div>
+            <!-- image -->
+            <img
+            src="img/t/5.jpg"
+          />
+            <div class="title">To the god</div>
+          </div>
+
+         
+          
+          <!-- item -->
+          <div class="item">
+            <!-- number of the item -->
+            <div class="item-number">12</div>
+            <!-- image -->
+            <img
+            src="img/t/25.jpg"
+          />
+            <!-- title if title -->
+            <div class="title">
+             To spenting a great
+              <p class="french">
+                day together
+              </p>
+            </div>
+          </div>
+
+
+          
+          <!-- item -->
+          <div class="item">
+            <!-- number of the item -->
+            <div class="item-number">13</div>
+            <!-- image -->
+            <img
+            src="img/t/6.jpg"
+          />
+            <!-- title if title -->
+            <div class="title">
+              To sharing extra cold drinks
+            </div>
+          </div>
+          
+          <!-- item -->
+          <div class="item">
+            <!-- number of the item -->
+            <div class="item-number">14</div>
+            <!-- image -->
+            <img
+            src="img/t/16.jpg"
+          />
+            <!-- title if title -->
+            <div class="title">
+              To making funny faces
+              </p>
+            </div>
+          </div>
+          
+          <!-- item -->
+          <div class="item">
+            <!-- number of the item -->
+            <div class="item-number">15</div>
+            <!-- image -->
+            <img
+            src="img/t/7.jpg"
+          />
+            <!-- title if title -->
+            <div class="title">
+              To clicking 50 selies<p class="french">
+                and deleting 48
+              </p>
+            </div>
+          </div>
+          
+          <!-- item -->
+          <div class="item">
+            <!-- number of the item -->
+            <div class="item-number">16</div>
+            <!-- image -->
+            <img
+            src="img/t/17.jpg"
+          />
+            <!-- title if title -->
+            <div class="title">
+              To the fountains
+              <p class="french">
+                and the college
+              </p>
+            </div>
+          </div>
+
+          
+          <!-- item -->
+          <div class="item">
+            <!-- number of the item -->
+            <div class="item-number">17</div>
+            <!-- image -->
+            <img
+            src="img/t/8.jpg"
+          />
+            <!-- title if title -->
+            <div class="title">
+              To the blood
+              <p class="french">
+                from the innocent humans that we sucked.
+              </p>
+            </div>
+          </div>
+
+          
+          <!-- item -->
+          <div class="item">
+            <!-- number of the item -->
+            <div class="item-number">18</div>
+            <!-- image -->
+            <img
+            src="img/t/10.jpg"
+          />
+            <!-- title if title -->
+            <div class="title">
+              To discovering
+              <p class="french">
+                What is beneath ocean
+              </p>
+            </div>
+          </div>
+
+          
+          <!-- item -->
+          <div class="item">
+            <!-- number of the item -->
+            <div class="item-number">19</div>
+            <!-- image -->
+            <img
+            src="img/t/9.jpg"
+          />
+            <!-- title if title -->
+            <div class="title">
+              To the same but different poses
+              
+            </div>
+          </div>
+
+          
+          <!-- item -->
+          <div class="item">
+            <!-- number of the item -->
+            <div class="item-number">20</div>
+            <!-- image -->
+            <img
+            src="img/t/19.jpg"
+          />
+            <!-- title if title -->
+            <div class="title">
+              To being the coolest
+              </p>
+            </div>
+          </div>
+          
+          <!-- item -->
+          <div class="item">
+            <!-- number of the item -->
+            <div class="item-number">21</div>
+            <!-- image -->
+            <img
+            src="img/t/18.jpg"
+          />
+            <!-- title if title -->
+            <div class="title">
+             To the togetherness
+              </p>
+            </div>
+          </div>
+
+          <!-- item -->
+          <div class="item">
+            <!-- number of the item -->
+            <div class="item-number">22</div>
+            <!-- image -->
+            <img
+            src="img/t/20.jpg"
+          />
+            <!-- title if title -->
+            <div class="title">
+             To the pitampura
+              </p>
+            </div>
+          </div>
+          
+           <!-- item -->
+           <div class="item">
+            <!-- number of the item -->
+            <div class="item-number">23</div>
+            <!-- image -->
+            <img
+            src="img/t/15.jpg"
+          />
+            <!-- title if title -->
+            <div class="title">
+            We are again back at the burgers and shakes  💕
+              
+            </div>
+          </div>
+          <!-- item -->
+
+
+          
+        </div>
+      </body>
+          </html>
+  </head>
+</html>

@@ -1,267 +1,278 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
 
-
-<head>
-     <meta charset="utf-8">
-	 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta
-    name="description"
-    content="Hi,I am Devesh,a Senior year engineering student from Delhi technological University. Mathematics and computing Student, A coder by heart and developer by skill.Someone who loves to code, imaging and create crazy stuff."
-  />
-  <meta
-    name="keywords"
-    content="Student,btech,Engineer,wannabe,lover,polite,humour,hero,agency, clean, corporate, creative, multipurpose, photography, personal portfolio, architect, elegant, minimal, one page, parallax, showcase, blog, branding"
-  />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="robots" content="index, follow" />
-  <meta name="language" content="English">
-	<meta name="revisit-after" content="1 days">
-	<meta name="author" content="Devesh Singh">
-	
-	<link rel="icon" type="image/x-icon" class="js-site-favicon" href="./images/favicon.ico">
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Hi,I am Devesh,a Senior year engineering student from Delhi technological University. Mathematics and computing Student, A coder by heart and developer by skill.Someone who loves to code, imaging and create crazy stuff."
+    />
+    <meta
+      name="keywords"
+      content="Student,btech,Engineer,wannabe,lover,polite,humour,hero,agency, clean, corporate, creative, multipurpose, photography, personal portfolio, architect, elegant, minimal, one page, parallax, showcase, blog, branding"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="author" content="Devesh Singh" />
 
+    <link
+      rel="icon"
+      type="image/x-icon"
+      class="js-site-favicon"
+      href="./images/favicon.ico"
+    />
 
     <title>Fetching Happiness.</title>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130645554-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-130645554-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'UA-130645554-1');
-</script>
-<style>
-     body {
-        margin:0;
-        background:mistyrose;
-    }
+      gtag("config", "UA-130645554-1");
+    </script>
+    <style>
+      body {
+        margin: 0;
+        background: mistyrose;
+      }
 
-/* wings */
+      /* wings */
 
-.wing {
-    background:white;
-     border-radius: 12px 20px 60px 20px;
-     width:120px;
-     height:50px; margin-top:80px;
-     position:absolute;
-}
+      .wing {
+        background: white;
+        border-radius: 12px 20px 60px 20px;
+        width: 120px;
+        height: 50px;
+        margin-top: 80px;
+        position: absolute;
+      }
 
-/* right wing */
+      /* right wing */
 
-.right {
-    margin-left:-60px;
-    left:50%;
-    animation:flap1 1s infinite;
-    border-bottom:3px solid rgba(0,0,0,.08);
-     border-radius: 12px 20px 60px 20px;
-    transform:rotate(-10deg) translate(250px,0);
-}
+      .right {
+        margin-left: -60px;
+        left: 50%;
+        animation: flap1 1s infinite;
+        border-bottom: 3px solid rgba(0, 0, 0, 0.08);
+        border-radius: 12px 20px 60px 20px;
+        transform: rotate(-10deg) translate(250px, 0);
+      }
 
-@keyframes flap1 {
-    0% {
-        transform:rotate(-10deg) translate(250px,0);
-    }
-    
-    50% {
-        transform:rotate(-5deg) translate(250px,0);
-    }
-}
-.right:before {
-    position:absolute;
-    content:'';
-    background:white;
-    width:70%;
-    height:70%;
-       border-bottom:3px solid rgba(0,0,0,.08);
-    border-radius: 20px 20px 60px 20px;
-    transform:rotate(20deg) translate(-1px,0);
-    margin-top:38px;
-}
+      @keyframes flap1 {
+        0% {
+          transform: rotate(-10deg) translate(250px, 0);
+        }
 
-.right:after {
-      position:absolute;
-    content:'';
-    background:white;
-    width:40%;
-    transform:rotate(29deg) translate(-8px,0);
-    height:30%;
-       border-bottom:3px solid rgba(0,0,0,.08);
-    border-radius: 0px 0px 60px 70px;
-    margin-top:66px;
-}
+        50% {
+          transform: rotate(-5deg) translate(250px, 0);
+        }
+      }
+      .right:before {
+        position: absolute;
+        content: "";
+        background: white;
+        width: 70%;
+        height: 70%;
+        border-bottom: 3px solid rgba(0, 0, 0, 0.08);
+        border-radius: 20px 20px 60px 20px;
+        transform: rotate(20deg) translate(-1px, 0);
+        margin-top: 38px;
+      }
 
-/* left wing */
+      .right:after {
+        position: absolute;
+        content: "";
+        background: white;
+        width: 40%;
+        transform: rotate(29deg) translate(-8px, 0);
+        height: 30%;
+        border-bottom: 3px solid rgba(0, 0, 0, 0.08);
+        border-radius: 0px 0px 60px 70px;
+        margin-top: 66px;
+      }
 
-.left {
-    border-radius:12px 20px 20px 60px;
-     margin-left:-60px;
-    left:50%;
-     animation:flap2 1s infinite;
-      border-bottom:3px solid rgba(0,0,0,.08);
-    transform:rotate(10deg) translate(-248px, 0);
-}
+      /* left wing */
 
-@keyframes flap2 {
-    0% {
-        transform:rotate(10deg) translate(-248px,0);
-    }
-    
-    50% {
-        transform:rotate(5deg) translate(-248px,0);
-    }
-}
+      .left {
+        border-radius: 12px 20px 20px 60px;
+        margin-left: -60px;
+        left: 50%;
+        animation: flap2 1s infinite;
+        border-bottom: 3px solid rgba(0, 0, 0, 0.08);
+        transform: rotate(10deg) translate(-248px, 0);
+      }
 
+      @keyframes flap2 {
+        0% {
+          transform: rotate(10deg) translate(-248px, 0);
+        }
 
-.left:before {
-    position:absolute;
-    content:'';
-    background:white;
-    width:70%;
-       border-bottom:3px solid rgba(0,0,0,.08);
-    transform:translate(46%,0) rotate(-20deg);
-    height:60%;
-      border-radius:12px 20px 70px 70px;
-    margin-top:40px;
-}
+        50% {
+          transform: rotate(5deg) translate(-248px, 0);
+        }
+      }
 
-.left:after {
-      position:absolute;
-    content:'';
-    background:white;
-    width:40%;
-       border-bottom:3px solid rgba(0,0,0,.08);
-    height:30%;
-     transform:translate(164%,0) rotate(-34deg);
-     border-radius:0px 0px 70px 60px;
-    margin-top:58px;
-}
+      .left:before {
+        position: absolute;
+        content: "";
+        background: white;
+        width: 70%;
+        border-bottom: 3px solid rgba(0, 0, 0, 0.08);
+        transform: translate(46%, 0) rotate(-20deg);
+        height: 60%;
+        border-radius: 12px 20px 70px 70px;
+        margin-top: 40px;
+      }
 
-/* heart */
+      .left:after {
+        position: absolute;
+        content: "";
+        background: white;
+        width: 40%;
+        border-bottom: 3px solid rgba(0, 0, 0, 0.08);
+        height: 30%;
+        transform: translate(164%, 0) rotate(-34deg);
+        border-radius: 0px 0px 70px 60px;
+        margin-top: 58px;
+      }
 
-.heart{
-    position: absolute;
-    width: 120px;
-    z-index:99999;
-    height: 100px;
-    margin-left:-50px;
-    left:50%;
-     animation: heart 1s infinite;
-    transform:scale(.8);
-    transition:.6s;
-    margin-top:60px;
-    
-}
-.heart:before,
-.heart:after{
-    content: "";
-    width: 50px;
-    height: 80px;
-    position: absolute;
-    left: 50px;
-    top: 0;
-    border-radius: 50px 50px 6px 6px;
-    background: crimson;
-    transform: rotate(-45deg);
-    transform-origin: 0 100%;
-}
-.heart:after{
-    left: 0;
-    transform: rotate(45deg);
-    transform-origin :100% 100%;
-}
+      /* heart */
 
-@keyframes heart {
-    0% {
-        transform: scale(.8) translate(0,0);
-    }
-    
-    50% {
-        transform: scale(.92) translate(0, 12px);
-    }
-    
-    100% {
-        transform:scale(.8);
-    }
-}
+      .heart {
+        position: absolute;
+        width: 120px;
+        z-index: 99999;
+        height: 100px;
+        margin-left: -50px;
+        left: 50%;
+        animation: heart 1s infinite;
+        transform: scale(0.8);
+        transition: 0.6s;
+        margin-top: 60px;
+      }
+      .heart:before,
+      .heart:after {
+        content: "";
+        width: 50px;
+        height: 80px;
+        position: absolute;
+        left: 50px;
+        top: 0;
+        border-radius: 50px 50px 6px 6px;
+        background: crimson;
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+      }
+      .heart:after {
+        left: 0;
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
+      }
 
-/* envelope */
+      @keyframes heart {
+        0% {
+          transform: scale(0.8) translate(0, 0);
+        }
 
-  #envelope {
-  background: white; 
-  margin: 200px auto;
-  height: 200px;
-  position: relative;
-  width: 320px;
-  border-radius:8px;
-  overflow:hidden;
-  animation: floaty 1s infinite;
-}
+        50% {
+          transform: scale(0.92) translate(0, 12px);
+        }
 
-@keyframes floaty {
-    0% {
-        transform:translate(0,0);
-    }
-    
-    50% {
-        transform:translate(0, 12px);
-    }
-}
+        100% {
+          transform: scale(0.8);
+        }
+      }
 
-/* bottom, left, and right sides */
-.sides {
-  border-color: transparent #fbfbfb #f7f7f7 #fcfcfc;
-  border-style: solid;
-  border-width: 90px 170px;
-  bottom: 0;
-  height: 0;
-  left: 0;
-  position: absolute;
-  width: 0;
-}
+      /* envelope */
 
-/* top side */
+      #envelope {
+        background: white;
+        margin: 200px auto;
+        height: 200px;
+        position: relative;
+        width: 320px;
+        border-radius: 8px;
+        overflow: hidden;
+        animation: floaty 1s infinite;
+      }
 
-.top {
-  border-color: white transparent transparent;
-  border-style: solid;
-  border-width: 108px 140px 90px 140px;
-  height: 0;
-  left: 0;
-  position: absolute;
-  top: 0;
-  transform-origin: 50% 0;
-  width: 0;
-}
+      @keyframes floaty {
+        0% {
+          transform: translate(0, 0);
+        }
 
+        50% {
+          transform: translate(0, 12px);
+        }
+      }
 
-</style>
-</head>
+      /* bottom, left, and right sides */
+      .sides {
+        border-color: transparent #fbfbfb #f7f7f7 #fcfcfc;
+        border-style: solid;
+        border-width: 90px 170px;
+        bottom: 0;
+        height: 0;
+        left: 0;
+        position: absolute;
+        width: 0;
+      }
 
-<body>
-    
+      /* top side */
+
+      .top {
+        border-color: white transparent transparent;
+        border-style: solid;
+        border-width: 108px 140px 90px 140px;
+        height: 0;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transform-origin: 50% 0;
+        width: 0;
+      }
+    </style>
+  </head>
+
+  <body>
     <div class="wing right"></div>
     <div class="wing left"></div>
-     <div class="heart"></div>
-        <div id="envelope">
-       
-  <div class="top"></div>
-  
-  <div class="sides"></div>
+    <div class="heart"></div>
+    <div id="envelope">
+      <div class="top"></div>
 
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" crossorigin="anonymous"></script>
+      <div class="sides"></div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"
+      crossorigin="anonymous"
+    ></script>
 
-<script>
-    $(document).ready(function () {
-    // Handler for .ready() called.
-    window.setTimeout(function () {
-        location.href = "http://www.deveshsingh.ml/birthdaymessage.html";
-    }, 5000);
-});
-
-</script>
-</body>
+    <script>
+      $(document).ready(function () {
+        // Handler for .ready() called.
+        window.setTimeout(function () {
+          location.href = "http://www.deveshsingh.ml/waytopast.html";
+        }, 5000);
+      });
+    </script>
+  </body>
+</html>
