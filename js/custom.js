@@ -114,11 +114,11 @@ $(document).ready(function () {
     var specialities = $(".specialities");
     specialities.typed({
       strings: [
-        "Designer",
+        "Data scientist",
         "Developer",
         "Coder",
-        "Front-end Developer",
-        "Visualizer",
+        "back-end Developer",
+        "Data engineer",
         "Web Developer",
         "Student",
         "Freelancer",
